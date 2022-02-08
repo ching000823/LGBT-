@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+		<style type="text/css">
+			#box{
+				background: red;
+				width:100px;
+				height: 100px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			
+			var x=0;
+			function ChangeColor(color){
+				
+				if(x==0){
+					document.getElementById("box").style.background="blue";
+					x++;
+				}else{
+					document.getElementById("box").style.background="red";
+					x--;
+				}
+
+				if(x==0){
+					color.value="藍色";
+				}else{
+					color.value="紅色";
+				}
+			
+			}
+		
+		</script>
+	</head>
+	<body>
+		<h2>換顏色</h2>
+		<div id="box"></div>
+		<div>
+			<input type='button' style="margin-top:30px" onclick="ChangeColor(this)" value="藍色">
+
+		</div>
+	</body>
+</html>

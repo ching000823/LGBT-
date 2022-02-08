@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>諮詢網站</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <style>
+      body{
+        font-family:Microsoft JhengHei;
+        font-weight:900;
+        background: url(images/LGBT1.jpg);
+        background-size: cover;
+        font-size:20px;
+      }
+      .url{
+        text-align: center;
+        font-size: 15pt;  
+      }
+      .pic{
+        margin-right:-200px;
+        margin-left: 10px;
+        z-index: 10;
+      }
+      .pic2{
+        margin-left:-90px;
+        margin-right:10px;
+        z-index: 10;
+      }
+      .pic_left{
+        float: left;
+        margin-left: 50px;
+        margin-top: 300px;
+        width: 300px;
+      }
+      .title{
+        text-align:center;
+        z-index: 0;
+        font-size:40px;
+        margin-top:55px;
+      }
+      .Content {
+        width: 70%;
+        margin-left: 15%;
+      }
+      .href_pic a {
+        font-size: 30px;
+      }
+      .talk {
+        width: 850px;
+        text-align:left;
+        position: absolute;
+        right: 50px;
+        bottom: 10px;
+        font-family: 'Noto Sans TC', sans-serif;
+        z-index: 5;
+        color: #33334d;
+      }
+    </style>
+  </head>
+  <body>
+      <header>
+          <nav class="cd-stretchy-nav">
+            <a class="cd-nav-trigger" href="#0">
+              
+              <span aria-hidden="true"></span>
+            </a>
+      
+            <ul>
+              <li><a href="./myWeb.html" class="active"><span>首頁</span></a></li>
+              <li><a href="./About LGBT.html"><span>關於同志</span></a></li>
+              <li><a href="./History and Culture.HTML"><span>歷史文化</span></a></li>
+              <li><a href="./news.html"><span>相關新聞</span></a></li>
+              <li><a href="./Diversified family structures.html"><span>多元成家</span></a></li>
+              <li><a href="./QandA.html"><span>Q&A</span></a></li>
+              <li><a href="./About us.HTML"><span>關於我們</span></a></li>
+            </ul>
+      
+            <span aria-hidden="true" class="stretchy-nav-bg"></span>
+          </nav>
+        </header>
+
+
+      <div class="url">
+        <div class="title">諮詢網站</div>
+        <img class="pic_left pic" src="images/cute.gif_s400x0">
+        
+        <div><script language="javascript" src="jquery-1.4.2.min.js"></script> 
+          <script> 
+            function show(obj,id) { 
+              var objDiv = $("#"+id+""); 
+              $(objDiv).css("display","block"); 
+              $(objDiv).css("left", event.clientX); 
+              $(objDiv).css("top", event.clientY + 10); 
+            } 
+            function hide(obj,id) { 
+              var objDiv = $("#"+id+""); 
+              $(objDiv).css("display", "none"); 
+            } 
+          </script> 
+          
+          
+          <div id="mydiv1" style="position:absolute;display:none;border:1px solid silver;background:silver; font-size: 50px;"> 
+              <img src="images/web1.jpg" style="height:350px">
+          </div> 
+          <div id="mydiv2" style="position:absolute;display:none;border:1px solid silver;background:silver;"> 
+              <img src="images/web2.jpg" style="height:350px"> 
+          </div> 
+          <div id="mydiv3" style="position:absolute;display:none;border:1px solid silver;background:silver;"> 
+              <img src="images/web3.jpg"style="height:350px">
+          </div> 
+          <div id="mydiv4" style="position:absolute;display:none;border:1px solid silver;background:silver;"> 
+              <img src="images/web4.jpg"style="height:300px">
+          </div> 
+          <div id="mydiv5" style="position:absolute;display:none;border:1px solid silver;background:silver;"> 
+              <img src="images/web5.jpg"style="height:250px"> 
+          </div>    
+     
+        <div class="Content"> 
+  				<p class="href_pic">
+              <a onMouseOver="javascript:show(this,'mydiv1');" onMouseOut="hide(this,'mydiv1')" href="https://hotline.org.tw/">台灣同志熱線諮詢協會</a>
+              <img class="pic" src="images/12.jpg"  style="border-radius:50%"; width="50px" height="50px"><br><br>
+
+              <img class="pic2" src="images/123.jpg"  style="border-radius:50%"; width="40px" height="40px">
+              <a onMouseOver="javascript:show(this,'mydiv2');" onMouseOut="hide(this,'mydiv2')" href="http://tas.bravo.org.tw:88/">同志諮詢專業人員網</a><br><br>
+
+              <a onMouseOver="javascript:show(this,'mydiv3');" onMouseOut="hide(this,'mydiv3')" href="https://page.line.me/lgbthotline">同志諮詢熱線(Line)</a>
+              <img class="pic" src="images/12.jpg"  style="border-radius:50%"; width="50px" height="50px"><br><br>
+
+              <img class="pic2" src="images/1234.jpg"  style="border-radius:50%"; width="40px" height="40px">
+              <a onMouseOver="javascript:show(this,'mydiv4');" onMouseOut="hide(this,'mydiv4')"  href="http://lgbt.38.org.tw/page/90">秘密說出口</a><br><br>
+
+              <a onMouseOver="javascript:show(this,'mydiv5');" onMouseOut="hide(this,'mydiv5')" href="https://tapcpr.org/" style="margin-left:100px">台灣伴侶盟-法律諮詢</a>
+              <img class="pic" src="images/12345.jpg"  style="border-radius:50%"; width="40px" height="40px">
+  				</p>
+        </div>   
+       </div>
+
+       <div class="talk">
+         最好的那一天會是當我們討論同性戀與異性戀時，不再強調那是「同性戀婚禮」——因為那只是一個「婚禮」。<br>
+		 我們也不再強調那是「同性戀婚姻」——因為那只是一個「婚姻」。
+         <p>--from 粉紅佳人樂隊--</p>
+       </div>
+	<script src="js/jquery-2.1.4.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+  </body>
+</html>

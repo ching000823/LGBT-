@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+
+		<style type="text/css">
+			#fd{
+				width:550px;
+				height:400px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			
+			function ChangePic(bts){
+					var btsw = document.getElementById("fd").width;
+                    var btsh = document.getElementById("fd").height;
+				if(threetype=='small'){
+					btsw -= 20;
+                    btsh -= 20;
+					document.getElementById("fd").style.width = btsw + "px";
+                    document.getElementById("fd").style.height = btsh + "px";
+					
+				}else if(threetype=='big'){
+					btsw += 20;
+                    btsh += 20;
+					document.getElementById("fd").style.width = btsw + "px";
+                    document.getElementById("fd").style.height = btsh + "px";
+				}else{
+					document.getElementById("fd").src="images/all.jpg";
+				}
+
+			
+			}
+		
+		</script>
+	</head>
+	<body>
+		<h2>ChangePic</h2>
+		<img id="fd" src="images/suga.jpg" >
+		<div> 
+			<input type='button' onclick="ChangePic('small')" value="小">
+			<input type='button' onclick="ChangePic('change')" value="換圖片">
+			<input type='button' onclick="ChangePic('big')" value="大">
+
+		</div>
+	</body>
+</html>
